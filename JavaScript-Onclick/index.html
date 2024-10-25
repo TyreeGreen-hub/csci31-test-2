@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function FunnyAlertMessage(p1, p2) {
+        alert("Why did you press this button?🤨");
+      }
+      function ChangeContent() {
+        const myParagraph = document.getElementById("my-paragraph");
+        myParagraph.innerHTML = "Thank you for pressing the correct button!🎉"
+      }
+    </script>
+</head>
+
+<body class="flex-col gap y-10 p-12">
+    <button
+    onclick="FunnyAlertMessage()"
+    class="px-6 py-4 bg-purple-200 hover:bg-purple-300 active:bg-purple-400 shadow-md transition-all cursor-pointer border-0 rounded-md"
+    >Do Not Press</button>
+    <button
+    onclick="ChangeContent()"
+    class="px-6 py-4 bg-purple-200 hover:bg-purple-300 active:bg-purple-400 shadow-md transition-all cursor-pointer border-0 rounded-md"
+    >Press This One</button>
+    <p class="p-8 bg-stone-200 mt-4" id= "my-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda error non aspernatur. Dolores molestias veniam obcaecati dicta vel eveniet quaerat? Nesciunt, suscipit inventore voluptas esse quaerat eaque veniam neque reiciendis!</p>
+</body>
+
+</html>
