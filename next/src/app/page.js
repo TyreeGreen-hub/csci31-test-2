@@ -1,7 +1,7 @@
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Main from './components/Main'
-import Navbar from './components/Navbar'
+import Footer from './compnents/Footer'
+import Header from './compnents/Header'
+import Main from './compnents/Main'
+import Navbar from './compnents/Navbar'
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
         <Header />
         <Main />
       </div>
+      <Footer />
     </div>
   )
 }
