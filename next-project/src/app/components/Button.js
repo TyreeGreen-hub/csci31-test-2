@@ -1,11 +1,11 @@
-export default function Button({ title, href = null }) {
+export default function Button({ href = null, children, classNameProp = ''}) {
   const classNames =
-    'px-6 py-4 bg-purple-300 hover:bg-purple-400 active:bg-purple-500 shadow-md transition-all cursor-pointer border-0 rounded-md'
+    `px-6 py-4 bg-purple-300 hover:bg-purple-400 active:bg-purple-500 shadow-md transition-all cursor-pointer border-0 rounded-md ${classNameProp}`
   return href ? (
     <a href={href} className={classNames}>
-      {title}
+      {children}
     </a>
   ) : (
-    <button className={classNames}>{title}</button>
+    <button className={classNames}>{children}</button>
   )
 }
